@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhoreDash - Sinful Swipe Delivery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .neon-pink { color: #ff00ff; text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff; }
+        .neon-green { color: #0f0; text-shadow: 0 0 10px #0f0, 0 0 20px #0f0; }
+        .glow-purple { color: #c0f; text-shadow: 0 0 10px #c0f; }
+        .pimp-gradient { background: linear-gradient(90deg, #000000, #1f0033, #000000); }
+        .card-glow { box-shadow: 0 0 15px #ff00ff; }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .floating { animation: float 3s ease-in-out infinite; }
+    </style>
+</head>
+<body class="bg-black text-white font-mono">
+    <!-- Custom Navbar Component -->
+    <custom-navbar></custom-navbar>
+        <!-- Live Stats -->
+        <section class="container mx-auto px-4">
+          <live-stats></live-stats>
+        </section>
+
+        <!-- Promo Banner -->
+<div class="p-4 bg-gradient-to-r from-purple-900 via-pink-500 to-purple-900 text-center font-bold text-xl animate-pulse">
+        🍑 SWIPE RIGHT FOR 50% OFF FIRST ORDER: PIMPMEUP 🍑
+    </div>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <section class="flex flex-col md:flex-row items-center mb-16">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-5xl md:text-6xl font-bold mb-4 neon-pink">WHOREDASH</h1>
+                <h2 class="text-2xl md:text-3xl mb-6 glow-purple">Swipe right for delivery... and maybe more 😘</h2>
+                <p class="text-lg mb-8 text-gray-300">Your one-stop sin shop for late-night cravings. From booze to babysitters, we got your bad decisions covered.</p>
+                <div class="flex flex-wrap gap-4">
+                    <button class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-full flex items-center">
+                        <i data-feather="download" class="mr-2"></i> Get the App
+                    </button>
+                    <button class="border-2 border-pink-600 text-pink-600 hover:bg-pink-600 hover:text-white font-bold py-3 px-6 rounded-full">
+                        How It Works
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 floating">
+                <video autoplay loop muted playsinline class="rounded-2xl card-glow w-full max-w-md mx-auto">
+                    <source src="https://huggingface.co/spaces/Bearcare/whoredash-sinful-swipe-delivery/resolve/main/videos/674ef1645e262d9d393a68c02449648c.mp4" type="video/mp4">
+                </video>
+            </div>
+</section>
+        <!-- Categories Tabs -->
+        <section class="mb-16" id="categories">
+            <h2 class="text-3xl font-bold mb-8 text-center neon-green">OUR QUESTIONABLE SERVICES</h2>
+            
+            <div class="tabs-container">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="liquor">
+                        <i data-feather="coffee"></i>
+                        <span>Liquor</span>
+                    </button>
+                    <button class="tab-btn" data-tab="weed">
+                        <i data-feather="leaf"></i>
+                        <span>Weed & More</span>
+                    </button>
+                    <button class="tab-btn" data-tab="toys">
+                        <i data-feather="heart"></i>
+                        <span>Adult Toys</span>
+                    </button>
+                    <button class="tab-btn" data-tab="massage">
+                        <i data-feather="user-plus"></i>
+                        <span>Massages</span>
+                    </button>
+                </div>
+                
+                <div class="tabs-content">
+                    <div id="liquor-tab" class="tab-pane active">
+                        <category-carousel category="liquor"></category-carousel>
+                    </div>
+                    <div id="weed-tab" class="tab-pane">
+                        <category-carousel category="weed"></category-carousel>
+                    </div>
+                    <div id="toys-tab" class="tab-pane">
+                        <category-carousel category="toys"></category-carousel>
+                    </div>
+                    <div id="massage-tab" class="tab-pane">
+                        <category-carousel category="massage"></category-carousel>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- How It Works -->
+        <section class="mb-16 p-8 bg-gray-900 rounded-2xl">
+            <h2 class="text-3xl font-bold mb-8 text-center neon-pink">HOW IT WORKS</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-pink-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 neon-green">SWIPE RIGHT</h3>
+                    <p class="text-gray-300">Like what you see? Swipe right on that sweet, sweet sin</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 neon-green">GET MATCHED</h3>
+                    <p class="text-gray-300">Our "delivery specialists" will be at your door faster than your dignity disappears</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 neon-green">ENJOY & REPENT</h3>
+                    <p class="text-gray-300">Enjoy your questionable life choices - we accept prayers as tips</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIP Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center glow-purple">VIP HOE CLUB</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-gradient-to-br from-purple-900 to-black p-6 rounded-xl border-2 border-pink-600">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-bold neon-green">BRONZE PIMP</h3>
+                        <span class="bg-yellow-600 text-black px-3 py-1 rounded-full text-sm font-bold">$9.99/mo</span>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-green-500"></i> 10% off bad decisions</li>
+                        <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-green-500"></i> Priority customer service</li>
+                        <li class="flex items-center"><i data-feather="x" class="w-4 h-4 mr-2 text-red-500"></i> No guilt included</li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-br from-pink-900 to-black p-6 rounded-xl border-2 border-purple-500 transform scale-105 card-glow">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-bold neon-pink">GOLD HOE</h3>
+                        <span class="bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-bold">$29.99/mo</span>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-green-500"></i> 25% off bad decisions</li>
+                        <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-green-500"></i> Free "discretion fee"</li>
+                        <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-green-500"></i> VIP support (24/7)</li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-br from-black to-gray-900 p-6 rounded-xl border-2 border-yellow-400">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-bold text-yellow-400">PLATINUM PIMP</h3>
+                        <span class="bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-bold">$99.99/mo</span>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-green-500"></i> 50% off everything</li>
+                        <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-green-500"></i> Personal "account manager"</li>
+                        <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-green-500"></i> Free bail assistance</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center neon-green">DON'T TRUST US? TRUST THESE LOSERS</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-gray-900 p-6 rounded-xl border border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.imgur.com/3f5d8Kj.jpg" alt="User" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold neon-pink">Candy 🍑</h4>
+                            <div class="flex text-yellow-400">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"Got my Henny and backshots in under 15 mins! 10/10 would sin again."</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-xl border border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.imgur.com/9kL2mPq.jpg" alt="User" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold glow-purple">Diamond 💎</h4>
+                            <div class="flex text-yellow-400">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"Premium mids AND premium tears? WhoreDash understands my needs."</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-xl border border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.imgur.com/ZpR8vLm.jpg" alt="User" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-blue-400">Lexus 👠</h4>
+                            <div class="flex text-yellow-400">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"The sushi was fresh but the ending was happier than expected 😉"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Delivery Zones -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center neon-pink">OUR SIN ZONES</h2>
+            <div class="bg-gray-900 p-6 rounded-xl">
+                <div class="relative h-64 md:h-96 bg-purple-900 rounded-lg overflow-hidden">
+                    <img src="https://huggingface.co/spaces/Bearcare/whoredash-sinful-swipe-delivery/resolve/main/images/a_gritty_urban_spoof_of_the_Do.jpeg" 
+                         alt="Delivery Zones Map" 
+                         class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-opacity-60 bg-black flex items-center justify-center">
+                        <h3 class="text-2xl font-bold neon-green">YOUR NEIGHBORHOOD IS PROBABLY COVERED</h3>
+                    </div>
+                </div>
+<div class="grid md:grid-cols-4 gap-4 mt-6">
+                    <div class="bg-pink-900 bg-opacity-50 p-3 rounded-lg text-center">
+                        <h4 class="font-bold mb-1 neon-green">DARK RED ZONE</h4>
+                        <p class="text-sm">24/7 service</p>
+                    </div>
+                    <div class="bg-purple-900 bg-opacity-50 p-3 rounded-lg text-center">
+                        <h4 class="font-bold mb-1 neon-pink">PURPLE ZONE</h4>
+                        <p class="text-sm">Until 4am</p>
+                    </div>
+                    <div class="bg-yellow-900 bg-opacity-50 p-3 rounded-lg text-center">
+                        <h4 class="font-bold mb-1 text-yellow-400">YELLOW ZONE</h4>
+                        <p class="text-sm">Limited services</p>
+                    </div>
+                    <div class="bg-gray-700 p-3 rounded-lg text-center">
+                        <h4 class="font-bold mb-1 text-gray-400">NO-FLY ZONE</h4>
+                        <p class="text-sm">We don't go there</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Custom Footer Component -->
+    <custom-footer></custom-footer>
+
+    <!-- Floating Cart Button -->
+    <div id="cart-button" class="fixed bottom-6 right-6 bg-pink-600 hover:bg-pink-700 text-white font-bold py-4 px-6 rounded-full shadow-xl flex items-center cursor-pointer">
+        <i data-feather="shopping-cart" class="mr-2"></i>
+        <span id="cart-count">0</span> items • $<span id="cart-total">0.00</span>
+    </div>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/delivery-card.js"></script>
+    <script src="components/chat-bubble.js"></script>
+    <script src="components/chat-window.js"></script>
+    <script src="components/tracking-map.js"></script>
+    <script src="components/media-sharer.js"></script>
+    <script src="components/live-stats.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+    <script>
+        feather.replace();
+        
+        // Add audio context for sound effects
+        document.addEventListener('click', function() {
+            const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            const oscillator = audioCtx.createOscillator();
+            const gainNode = audioCtx.createGain();
+            
+            oscillator.type = 'sine';
+            oscillator.frequency.value = 800;
+            gainNode.gain.value = 0.05;
+            
+            oscillator.connect(gainNode);
+            gainNode.connect(audioCtx.destination);
+            
+            oscillator.start();
+            gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.1);
+            oscillator.stop(audioCtx.currentTime + 0.1);
+        });
+// Simple cart functionality
+        let cartCount = 0;
+        let cartTotal = 0;
+        const cartButton = document.getElementById('cart-button');
+        
+        cartButton.addEventListener('click', () => {
+            alert(`Checkout: $${cartTotal.toFixed(2)} 😈\n\nThank you for your questionable life choices!`);
+        });
+        
+        // Simulate adding items (would be replaced with actual functionality)
+        function addToCart(price) {
+            cartCount++;
+            cartTotal += price;
+            document.getElementById('cart-count').textContent = cartCount;
+            document.getElementById('cart-total').textContent = cartTotal.toFixed(2);
+            
+            // Add animation
+            cartButton.classList.add('animate-bounce');
+            setTimeout(() => {
+                cartButton.classList.remove('animate-bounce');
+            }, 1000);
+        }
+    </script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>

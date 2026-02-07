@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhoreDash - Cannabis Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-black text-white">
+    <custom-navbar></custom-navbar>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12">
+            <h1 class="text-4xl font-bold mb-6 neon-green text-center">Cannabis Menu</h1>
+            <p class="text-center text-gray-300 mb-8">From CBD to WTF - We've got that sticky icky</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-900 rounded-xl p-6 border border-green-500">
+                    <h3 class="text-2xl font-bold neon-green mb-4">Flower</h3>
+                    <div class="space-y-4">
+                        <div class="bg-gray-800 p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold">OG Kush</h4>
+                                <p class="text-sm text-gray-400">Indica dominant hybrid</p>
+                            </div>
+                            <span class="font-bold text-green-400">$60/eighth</span>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold">Sour Diesel</h4>
+                                <p class="text-sm text-gray-400">Sativa dominant hybrid</p>
+                            </div>
+                            <span class="font-bold text-green-400">$65/eighth</span>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold">Purple Punch</h4>
+                                <p class="text-sm text-gray-400">Indica - Relaxing</p>
+                            </div>
+                            <span class="font-bold text-green-400">$70/eighth</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-900 rounded-xl p-6 border border-green-500">
+                    <h3 class="text-2xl font-bold neon-green mb-4">Concentrates</h3>
+                    <div class="space-y-4">
+                        <div class="bg-gray-800 p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold">Live Resin</h4>
+                                <p class="text-sm text-gray-400">Full spectrum extract</p>
+                            </div>
+                            <span class="font-bold text-green-400">$80/g</span>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold">Shatter</h4>
+                                <p class="text-sm text-gray-400">Glass-like concentrate</p>
+                            </div>
+                            <span class="font-bold text-green-400">$70/g</span>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold">Rosin</h4>
+                                <p class="text-sm text-gray-400">Solventless extract</p>
+                            </div>
+                            <span class="font-bold text-green-400">$90/g</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-900 rounded-xl p-6 border border-green-500">
+                    <h3 class="text-2xl font-bold neon-green mb-4">Edibles</h3>
+                    <div class="space-y-4">
+                        <div class="bg-gray-800 p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold">Gummy Bears</h4>
+                                <p class="text-sm text-gray-400">100mg THC per pack</p>
+                            </div>
+                            <span class="font-bold text-green-400">$25/pack</span>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold">Chocolate Bar</h4>
+                                <p class="text-sm text-gray-400">200mg THC</p>
+                            </div>
+                            <span class="font-bold text-green-400">$35/bar</span>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold">CBD Tincture</h4>
+                                <p class="text-sm text-gray-400">1000mg CBD</p>
+                            </div>
+                            <span class="font-bold text-green-400">$50/bottle</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-900 rounded-xl p-8 border border-green-500 mb-12">
+            <h2 class="text-3xl font-bold neon-green mb-6 text-center">Special Offers</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-gradient-to-r from-green-900 to-black p-6 rounded-xl">
+                    <h3 class="text-xl font-bold mb-4">First Time Buyer</h3>
+                    <p class="mb-4 text-gray-300">Get 20% off your first order with code: NEWSTONER</p>
+                    <button class="bg-green-600 hover:bg-green-700 text-black font-bold py-2 px-4 rounded-full">
+                        Apply Code
+                    </button>
+                </div>
+                <div class="bg-gradient-to-r from-green-900 to-black p-6 rounded-xl">
+                    <h3 class="text-xl font-bold mb-4">VIP Members</h3>
+                    <p class="mb-4 text-gray-300">Gold Hoe members get free delivery on all cannabis orders</p>
+                    <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full">
+                        Upgrade Now
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center">
+            <h2 class="text-2xl font-bold neon-pink mb-4">Ready to get lifted?</h2>
+            <p class="text-gray-300 mb-6">Our discreet delivery specialists will be at your door faster than you can roll a joint</p>
+            <button class="bg-green-600 hover:bg-green-700 text-black font-bold py-3 px-6 rounded-full">
+                <i data-feather="shopping-cart" class="inline mr-2"></i> Add to Cart
+            </button>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhoreDash - Alcohol Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-black text-white">
+    <custom-navbar></custom-navbar>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12">
+            <h1 class="text-4xl font-bold mb-6 neon-pink text-center">Alcohol Menu</h1>
+            <p class="text-center text-gray-300 mb-8">Because stores close but bad decisions don't</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-900 rounded-xl p-6 border border-pink-500">
+                    <h3 class="text-2xl font-bold neon-pink mb-4">Premium Liquor</h3>
+                    <div class="space-y-4">
+                        <div class="bg-gray-800 p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold">Dom Pérignon</h4>
+                                <p class="text-sm text-gray-400">Vintage 2012</p>
+                            </div>
+                            <span class="font-bold text-pink-400">$300/bottle</span>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold">Johnnie Walker Blue</h4>
+                                <p class="text-sm text-gray-400">Blended Scotch</p>
+                            </div>
+                            <span class="font-bold text-pink-400">$250/bottle</span>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold">Hennessy XO</h4>
+                                <p class="text-sm text-gray-400">Extra Old Cognac</p>
+                            </div>
+                            <span class="font-bold text-pink-400">$180/bottle</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-900 rounded-xl p-6 border border-pink-500">
+                    <h3 class="text-2xl font-bold neon-pink mb-4">Party Packs</h3>
+                    <div class="space-y-4">
+                        <div class="bg-gray-800 p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold">Basic Bitch Pack</h4>
+                                <p class="text-sm text-gray-400">Vodka, mixers, cups</p>
+                            </div>
+                            <span class="font-bold text-pink-400">$50</span>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold">Baller Pack</h4>
+                                <p class="text-sm text-gray-400">Premium liquor, mixers, ice</p>
+                            </div>
+                            <span class="font-bold text-pink-400">$150</span>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold">VIP Experience</h4>
+                                <p class="text-sm text-gray-400">Top shelf, mixers, bartender</p>
+                            </div>
+                            <span class="font-bold text-pink-400">$300</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-900 rounded-xl p-6 border border-pink-500">
+                    <h3 class="text-2xl font-bold neon-pink mb-4">Beer & Wine</h3>
+                    <div class="space-y-4">
+                        <div class="bg-gray-800 p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold">Craft Beer 6-Pack</h4>
+                                <p class="text-sm text-gray-400">Local selection</p>
+                            </div>
+                            <span class="font-bold text-pink-400">$20</span>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold">Red Wine</h4>
+                                <p class="text-sm text-gray-400">Cabernet Sauvignon</p>
+                            </div>
+                            <span class="font-bold text-pink-400">$40/bottle</span>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg flex justify-between items-center">
+                            <div>
+                                <h4 class="font-bold">White Wine</h4>
+                                <p class="text-sm text-gray-400">Chardonnay</p>
+                            </div>
+                            <span class="font-bold text-pink-400">$35/bottle</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-900 rounded-xl p-8 border border-pink-500 mb-12">
+            <h2 class="text-3xl font-bold neon-pink mb-6 text-center">Happy Hour Specials</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-gradient-to-r from-pink-900 to-black p-6 rounded-xl">
+                    <h3 class="text-xl font-bold mb-4">5pm-7pm Daily</h3>
+                    <p class="mb-4 text-gray-300">20% off all alcohol orders. Perfect for pre-gaming or regretting life choices.</p>
+                    <button class="bg-pink-600 hover:bg-pink-700 text-black font-bold py-2 px-4 rounded-full">
+                        Order Now
+                    </button>
+                </div>
+                <div class="bg-gradient-to-r from-pink-900 to-black p-6 rounded-xl">
+                    <h3 class="text-xl font-bold mb-4">Weekend Special</h3>
+                    <p class="mb-4 text-gray-300">Buy 2 bottles, get 1 free (cheapest bottle free). Perfect for blackout Sundays.</p>
+                    <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center">
+            <h2 class="text-2xl font-bold neon-green mb-4">Need booze ASAP?</h2>
+            <p class="text-gray-300 mb-6">Our delivery specialists will have your drinks faster than you can say "I shouldn't"</p>
+            <button class="bg-pink-600 hover:bg-pink-700 text-black font-bold py-3 px-6 rounded-full">
+                <i data-feather="shopping-cart" class="inline mr-2"></i> Add to Cart
+            </button>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
